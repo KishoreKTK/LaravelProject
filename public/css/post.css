@@ -1,0 +1,39 @@
+
+.badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    min-width: 10px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 99999px
+    }
+      
+.badge.badge-outlined {
+    background-color: transparent
+}
+
+.badge.badge-outlined.badge-info {
+    border-color: #20c997;
+    color: #20c997
+}
+
+.badge.badge-info.active {
+    border-color: #20c997;
+    color: white
+}
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+}
+    
